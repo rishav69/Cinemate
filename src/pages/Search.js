@@ -10,7 +10,7 @@ export const Search = ({apiPath}) => {
 
   const { data:movies } = useFetch(apiPath,queryTerm);
   
-  const pageTitle = useTitle(`Searxh Result for ${queryTerm}`);
+  useTitle(`Searxh Result for ${queryTerm}`);
 
   return (
     <main>
